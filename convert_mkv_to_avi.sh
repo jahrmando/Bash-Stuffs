@@ -24,6 +24,7 @@ convert() {
 		mv $video_mkv videos_temp/ && echo "Done!"
 	done
 	mv videos_temp/* . && rm -rf videos_temp/
+	rename '.mkv.' '.' *.avi
 }
 
 if [[ -n $1 ]]; then
